@@ -76,7 +76,7 @@ body {
   padding: 0 9%;
 }
 .home .red_sect h5, .mesa-de-entrada .red_sect h5, .sala-capacitaciones .red_sect h5 {
-  color: #eceaed;
+  color: #505050;
   margin-bottom: 0.1em;
   font-size: 1.73em;
 }
@@ -519,9 +519,11 @@ footer .contact .data .f_redes p {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  bottom: 0.5em;
-  width: 73%;
-  left: 0.5em;
+  bottom: 0;
+  width: 75%;
+  left: 0;
+  background: rgba(67, 188, 235, 0.7);
+  padding: 1em 0.5em;
 }
 .logos li {
   margin: 0 1em;
