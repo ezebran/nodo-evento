@@ -569,13 +569,15 @@ footer{
 
 .logos{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
-    bottom: 0.5em;
-    width: 73%;
-    left: 0.5em;
+    bottom: 0;
+    width: 75%;
+    left: 0;
+    background: rgb(67 188 235 / 70%);
+    padding: 1em 0.5em;
 	li{
 		margin:0 1em;
 		img{
