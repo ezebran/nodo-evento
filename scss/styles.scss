@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,800');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,800');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;600;800&display=swap');
+
 *{
 	margin: 0;
 	padding:0;
@@ -115,7 +117,7 @@ p{
 
 /* -----------------------------------------*/
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Encode Sans', sans-serif;
 	background:rgb(230,230,230);
 	text-rendering: auto;
 }
