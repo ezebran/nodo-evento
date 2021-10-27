@@ -296,7 +296,7 @@ body {
   border: none;
   border-radius: 3px;
   font-weight: 600;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   transition: all ease-out 0.3s;
@@ -317,13 +317,13 @@ body {
   cursor: pointer;
   span{
     font-size: 2.5em;
-    color: #505050;
+    color: white;
   }
 }
 
 .menu__container {
   position: fixed;
-  background: #d7d7d7;
+  background: #282828;
   width: 100%;
   height: 100vh;
   z-index: 99;
@@ -347,6 +347,9 @@ body {
 // CODIGO QUE EJECUTA EL RESPONSIVE
 
 @media screen and (max-width: 975px) { //PARA TABLET
+	.menu__btn{
+		display: flex;
+	}
   .home {
     .black_sect {
       display: none;
