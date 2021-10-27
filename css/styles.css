@@ -64,36 +64,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-.home .red_sect, .mesa-de-entrada .red_sect, .sala-capacitaciones .red_sect {
-  background: url(../img/bgs/fondo.jpg);
-  background-size: cover;
-  width: 75%;
-  height: 100%;
-  display: flex;
-  flex-flow: wrap column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 9%;
-}
-.home .red_sect h5, .mesa-de-entrada .red_sect h5, .sala-capacitaciones .red_sect h5 {
-  color: #505050;
-  margin-bottom: 0.1em;
-  font-size: 1.73em;
-}
-.home .red_sect h1, .mesa-de-entrada .red_sect h1, .sala-capacitaciones .red_sect h1 {
-  font-weight: 800;
-  color: #505050;
-  line-height: 1.04em;
-  font-size: 3.2em;
-}
-.home .red_sect h6, .mesa-de-entrada .red_sect h6, .sala-capacitaciones .red_sect h6 {
-  font-size: 1.3em;
-  font-weight: 300;
-  color: white;
-  margin-top: 0.5em;
-  background: #43bceb;
-  padding: 0.15em 0.4em;
-}
 .home .black_sect, .mesa-de-entrada .black_sect, .sala-capacitaciones .black_sect {
   background: #282828;
   width: 25%;
@@ -125,6 +95,45 @@ body {
   color: #d1d3d0;
   font-size: 2em;
   font-weight: 100;
+}
+
+.red_sect {
+  background: url(../img/bgs/fondo.jpg);
+  background-size: cover;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 9%;
+}
+.red_sect h5 {
+  color: #505050;
+  margin-bottom: 0.1em;
+  font-size: 1.73em;
+}
+.red_sect h1 {
+  font-weight: 800;
+  color: #505050;
+  line-height: 1.04em;
+  font-size: 3.2em;
+}
+.red_sect h6 {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: white;
+  margin-top: 0.5em;
+  background: #43bceb;
+  padding: 0.15em 0.4em;
+}
+.red_sect h4 {
+  color: #505050;
+  font-size: 1.3em;
+  margin-top: 0.5em;
+}
+.red_sect h4 span {
+  font-weight: 600;
 }
 
 .mesa-de-entrada {
@@ -518,7 +527,7 @@ footer .contact .data .f_redes p {
 .logos {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: absolute;
   bottom: 0;
@@ -534,7 +543,7 @@ footer .contact .data .f_redes p {
   width: 150px;
 }
 .logos li .ide-logo {
-  width: 200px;
+  width: 300px;
 }
 .logos li .secretaria-logo {
   width: 100px;
