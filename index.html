@@ -4,34 +4,65 @@
 	<title>Congreso federal de empleo público</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="icons/style.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
 
 
 	<section class="home">
+		<!-- Menu responsive -->
+			<button class="menu__btn" id="menu__btn">Menu <span class="icon-menu"></span></button>
+
+			<div class="menu__container" id="menu__container">
+				<button class="close" id="close__btn"><span class="icon-close"></span></button>
+				<a href="#">
+					<img src="img/logos/cofefup.png" alt="">
+				</a>
+				<ul>
+					<li>
+						<a href="#" class="btn btn-secondary mt-3">Inscripcion</a>
+					</li>
+					<li>
+						<a href="mesa-entrada.html" class="btn btn-secondary mt-3">Programa</a>
+					</li>
+					<li>
+						<a href="#" class="btn btn-secondary mt-3">Auditorio</a>
+					</li>
+					<li>
+						<a href="sala-capacitaciones.html" class="btn btn-secondary mt-3">Mesas de ponencias</a>
+					</li>
+					<li>
+						<a href="/informacion.html" class="btn btn-secondary mt-3">Informacion de congreso</a>
+					</li>
+					<li>
+						<a href="#" class="btn btn-secondary mt-3">Mesa de ayuda</a>
+					</li>
+				</ul>
+			</div>
+		<!-- Fin menu responsive -->
 		<div class="red_sect">
 			<h5>Bienvenido/a</h5>
 			<h1>Primer Congreso Federal de Empleo Público. Políticas federales de empleo público</h1>
 			
 			<h6>hallazgos y desafíos en el nuevo contexto</h6>
 			<h4><span>Días del congreso:</span> 1, 2 y 3 de Diciembre del 2021</h4>
-			<ul class="logos">
-				<li>
-					<a href="https://www.argentina.gob.ar/jefatura/gestion-y-empleo-publico" target="blank">
-						<img src="./img/logos/secretaria_blanco.png" alt="ide" class="ide-logo">
-					</a>
-				</li>
-				
-				<li>
-					<a href="http://www.sde.gob.ar/" target="blank">
-						<img src="./img/logos/santiago.png" alt="idera">
-					</a>
-				</li>
-				
-			</ul>
-		</div>
 
+		</div>
+		<ul class="logos">
+			<li>
+				<a href="https://www.argentina.gob.ar/jefatura/gestion-y-empleo-publico" target="blank">
+					<img src="./img/logos/secretaria_blanco.png" alt="ide" class="ide-logo">
+				</a>
+			</li>
+			
+			<li>
+				<a href="http://www.sde.gob.ar/" target="blank">
+					<img src="./img/logos/santiago.png" alt="idera">
+				</a>
+			</li>
+			
+		</ul>
 
 		<div class="black_sect">
 			<a href="https://www.argentina.gob.ar/jefatura/gestion-y-empleo-publico/cofefup"  target="blank">
@@ -43,10 +74,13 @@
 				<a href="mesa-entrada.html" class="btn btn-secondary mt-3">Programa</a>
 				<a href="#" class="btn btn-secondary mt-3">Auditorio</a>
 				<a href="sala-capacitaciones.html" class="btn btn-secondary mt-3">Mesas de ponencias</a>
-				<a href="#" class="btn btn-secondary mt-3">Informacion de congreso</a>
+				<a href="/informacion.html" class="btn btn-secondary mt-3">Informacion de congreso</a>
 				<a href="#" class="btn btn-secondary mt-3">Mesa de ayuda</a>
 			</div>
 		</div>
 	</section>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/menu.js"></script>
 </body>
 </html>
