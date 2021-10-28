@@ -177,9 +177,8 @@ body {
 .btn-secondary {
   background: linear-gradient(60deg, #41b5e4 15%, #257291);
   color: white;
-  width: 15em;
+  width: 19em;
   text-align: center;
-  text-transform: uppercase;
   font-size: 0.84em;
 }
 

@@ -29,6 +29,8 @@ $blancof2: rgb(245, 244, 243);
 $blancof3: rgb(236, 234, 237);
 $blancof4: rgb(220, 220, 220);
 
+$primary:#43bceb;
+
 /* ------ */
 // FIN DE PALETA DE COLORES DE MATERIAL..
 
@@ -228,9 +230,9 @@ body {
 .btn-secondary {
   background: linear-gradient(60deg, #41b5e4 15%, #257291);
   color: white;
-  width: 15em;
+  width: 19em;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: 0.84em;
 }
 
