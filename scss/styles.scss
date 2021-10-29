@@ -29,7 +29,7 @@ $blancof2: rgb(245, 244, 243);
 $blancof3: rgb(236, 234, 237);
 $blancof4: rgb(220, 220, 220);
 
-$primary:#43bceb;
+$primary: #43bceb;
 
 /* ------ */
 // FIN DE PALETA DE COLORES DE MATERIAL..
@@ -142,6 +142,8 @@ body {
     flex-flow: wrap column;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    right: 0;
     img {
       width: 14em;
     }
@@ -171,10 +173,10 @@ body {
 .red_sect {
   background: url(../img/bgs/fondo.jpg);
   background-size: cover;
-  width: 75%;
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
   @include col-st();
-  padding: 0 9%;
+  padding: 0 34% 0 9%;
   h5 {
     color: #505050;
     margin-bottom: 0.1em;
@@ -267,7 +269,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 75%;
   left: 0;
@@ -317,7 +319,7 @@ body {
   top: 2em;
   right: 2em;
   cursor: pointer;
-  span{
+  span {
     font-size: 2.5em;
     color: white;
   }
@@ -328,12 +330,12 @@ body {
   background: #282828;
   width: 100%;
   height: 100vh;
-  z-index: 99;
+  z-index: 999999;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top:100%;
+  top: 100%;
   ul {
     display: flex;
     flex-direction: column;
@@ -346,12 +348,106 @@ body {
   }
 }
 
+.ponencias {
+  height: 100%;
+  width: 100%;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 7em;
+  .mesas {
+    .mesa {
+      background: white;
+      border-radius: 3px;
+      width: 22em;
+      padding: 0.75em;
+      margin-bottom: 1em;
+      h4 {
+        font-weight: 700;
+        color: #6fc4e5;
+        margin-top: 0;
+      }
+      p {
+        color: #505050;
+        margin: 1em 0;
+      }
+      .mesa__foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          background: #6fc4e5;
+          padding: 0.5em 3em;
+          color: white;
+          border-radius: 3px;
+          font-weight: 600;
+        }
+        .horario{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          color: #505050;
+          font-size: 0.8em;
+          font-weight: 600;
+          span{
+            color: #6fc4e5;
+            margin-right: 0.3em;        
+          } 
+        }
+      }
+    }
+  }
+  .ponencias__btns {
+    button {
+      border: none;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      cursor: pointer;
+      width: 22em;
+      background: #6fc4e5;
+      margin-bottom: 1em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:hover{
+        background: #62b9db;
+      }
+      h6 {
+        background: none;
+        text-align: start;
+        color: white;
+        font-size: 1em;
+        padding: 0;
+      }
+      h5 {
+        font-size: 1.3em;
+        font-weight: 700;
+        color: white;
+      }
+      h2 {
+        color: white;
+        z-index: 99;
+      }
+      span {
+        color: rgba(253, 254, 255, 0.7);
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
 // CODIGO QUE EJECUTA EL RESPONSIVE
 
-@media screen and (max-width: 975px) { //PARA TABLET
-	.menu__btn{
-		display: flex;
-	}
+@media screen and (max-width: 975px) {
+  //PARA TABLET
+  .menu__btn {
+    display: flex;
+  }
   .home {
     .black_sect {
       display: none;
@@ -359,33 +455,68 @@ body {
   }
   .red_sect {
     width: 100%;
+    padding: 0 9%;
   }
   .logos {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 515px) { //PARA CELULAR
-  .red_sect{
-	height: initial;
+@media screen and (max-width: 515px) {
+  //PARA CELULAR
+  .red_sect {
+    height: initial;
     padding: 5em 8% 3em;
-	h1, h6{
-		margin-bottom: 0.5em;
-	}
+    h1,
+    h6 {
+      margin-bottom: 0.5em;
+    }
+    h1{
+      font-size: 2.5em;
+    }
+    h5{
+      font-size: 1.3em;
+    }
+    .ponencias{
+      flex-direction: column;
+      padding-bottom:0;
+      .mesas{
+        #mesa_dia1, #mesa_dia2{
+          width: 100%;
+          .mesa{
+            max-width: 100%;
+            .mesa__foot{
+              flex-direction: column-reverse;
+              a{
+                width: 100%;
+                text-align: center;
+                margin-top: 0.5em;
+              }
+            }
+          }
+        }
+      }
+      .ponencias__btns{
+        margin-bottom: 2em;
+        button{
+          max-width: 100%;
+        }
+      }
+    }
   }
-  .logos{
-	position: relative;
+  .logos {
+    position: relative;
     flex-direction: column;
     justify-content: center;
 
-	li{
-		width: 90%;
-		display: flex;
-		justify-content: center;
-		margin-bottom: 1em;
-		&:last-child{
-			margin-bottom: 0;
-		}
-	}
+    li {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
