@@ -186,7 +186,8 @@ body {
     font-weight: 800;
     color: rgba(80, 80, 80, 1);
     line-height: 1.04em;
-    font-size: 3.2em;
+    font-size: 2.6em;
+    margin: 0.25em 0;
   }
   h6 {
     font-size: 1.3em;
@@ -197,9 +198,10 @@ body {
     padding: 0.15em 0.4em;
   }
   h4 {
-    color: #505050;
-    font-size: 1.3em;
+    color: #00bcef;
+    font-size: 1.5em;
     margin-top: 0.5em;
+    font-weight: 600;
     span {
       font-weight: 600;
     }
@@ -336,6 +338,9 @@ body {
   justify-content: center;
   align-items: center;
   top: 100%;
+  img{
+    width: 10em;
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -441,6 +446,24 @@ body {
   }
 }
 
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  padding: 1em 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .cofefup_logo{
+    width: 300px;
+  }
+  .sgo_logo{
+    width: 175px;
+  }
+}
+
 // CODIGO QUE EJECUTA EL RESPONSIVE
 
 @media screen and (max-width: 975px) {
@@ -464,9 +487,19 @@ body {
 
 @media screen and (max-width: 515px) {
   //PARA CELULAR
+  nav{
+    width: 100%;
+    top: 4em;
+    .cofefup_logo{
+      width: 50%;
+    }
+    .sgo_logo{
+      width: 30%;
+    }
+  }
   .red_sect {
     height: initial;
-    padding: 5em 8% 3em;
+    padding: 8em 8% 3em;
     h1,
     h6 {
       margin-bottom: 0.5em;
