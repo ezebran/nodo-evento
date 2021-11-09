@@ -83,7 +83,7 @@ body {
 .home .black_sect img,
 .mesa-de-entrada .black_sect img,
 .sala-capacitaciones .black_sect img {
-  width: 14em;
+  width: 11em;
 }
 .home .black_sect .fecha,
 .mesa-de-entrada .black_sect .fecha,
@@ -216,14 +216,14 @@ body {
 .logos {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   position: fixed;
   bottom: 0;
   width: 75%;
   left: 0;
   background: rgba(67, 188, 235, 0.7);
-  padding: 1em 0.5em;
+  padding: 1em 0.5em 1em 4%;
 }
 .logos li {
   margin: 0 1em;
@@ -232,7 +232,7 @@ body {
   width: 150px;
 }
 .logos li .ide-logo {
-  width: 300px;
+  width: 400px;
 }
 .logos li .secretaria-logo {
   width: 100px;

@@ -145,7 +145,7 @@ body {
     position: fixed;
     right: 0;
     img {
-      width: 14em;
+      width: 11em;
     }
     .fecha {
       text-align: center;
@@ -269,21 +269,21 @@ body {
 .logos {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   position: fixed;
   bottom: 0;
   width: 75%;
   left: 0;
   background: rgb(67 188 235 / 70%);
-  padding: 1em 0.5em;
+  padding: 1em 0.5em 1em 4%;
   li {
     margin: 0 1em;
     img {
       width: 150px;
     }
     .ide-logo {
-      width: 300px;
+      width: 400px;
     }
     .secretaria-logo {
       width: 100px;
